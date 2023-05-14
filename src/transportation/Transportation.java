@@ -1,61 +1,52 @@
 package transportation;
 
 public abstract class Transportation {
-    String vehicle;
-    String tripType;
-    String TrackConstruction;
-    int maximumSpeed;
-    int passengerCapacity;
-    int loadCapacity;
+    String vehicleName;
+
+    String typeOfGeographicEnvironment;
+    String waysOfCommunication;
+    String energySource;
 
     // Getter and Setter
 
 
-    public String getVehicle() {
-        return vehicle;
+    public String getVehicleName() {
+        return vehicleName;
     }
 
-    public void setVehicle(String vehicle) {
-        this.vehicle = vehicle;
+    public void setVehicleName(String vehicleName) {
+        this.vehicleName = vehicleName;
     }
 
-    public String getTripType() {
-        return tripType;
+    public String getTypeOfGeographicEnvironment() {
+        return typeOfGeographicEnvironment;
     }
 
-    public void setTripType(String tripType) {
-        this.tripType = tripType;
+    public void setTypeOfGeographicEnvironment(String typeOfGeographicEnvironment) {
+        this.typeOfGeographicEnvironment = typeOfGeographicEnvironment;
     }
 
-    public String getTrackConstruction() {
-        return TrackConstruction;
+    public String getWaysOfCommunication() {
+        return waysOfCommunication;
     }
 
-    public void setTrackConstruction(String trackConstruction) {
-        TrackConstruction = trackConstruction;
+    public void setWaysOfCommunication(String waysOfCommunication) {
+        this.waysOfCommunication = waysOfCommunication;
     }
 
-    public int getMaximumSpeed() {
-        return maximumSpeed;
+    public String getEnergySource() {
+        return energySource;
     }
 
-    public void setMaximumSpeed(int maximumSpeed) {
-        this.maximumSpeed = maximumSpeed;
+    public void setEnergySource(String energySource) {
+        this.energySource = energySource;
     }
 
-    public int getPassengerCapacity() {
-        return passengerCapacity;
+    // methods
+    public void description(){
+        System.out.printf("Vehicle name: %s, type of geographic environment: %s, ways of communication: %s, energy source: %s",
+                vehicleName, typeOfGeographicEnvironment, waysOfCommunication, energySource);
     }
 
-    public void setPassengerCapacity(int passengerCapacity) {
-        this.passengerCapacity = passengerCapacity;
-    }
-
-    public int getLoadCapacity() {
-        return loadCapacity;
-    }
-
-    public void setLoadCapacity(int loadCapacity) {
-        this.loadCapacity = loadCapacity;
-    }
+    public abstract void getTheRemainingFuel(double fuelFromStart, double distanceTraveled);
 }
