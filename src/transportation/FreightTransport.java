@@ -1,6 +1,6 @@
 package transportation;
 
 public interface FreightTransport {
-    double calculationOfFuelFromLoad(double distance, double cargoWeight);
+    double freightEstimation(double distance, double cargoWeight);
 
 }

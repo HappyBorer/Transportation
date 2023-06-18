@@ -4,10 +4,10 @@ import transportation.FreightTransport;
 
 public class Freighter extends Aircraft implements FreightTransport {
 
-    private double maximumLoadHeight;
-    private double maximumLoadWidth;
-    private double maximumLoadLength;
-    private int loadCapacity;
+    private double maximumLoadHeight; // Максимальная высота груза
+    private double maximumLoadWidth; // Максимальная ширина груза
+    private double maximumLoadLength; // Максимальна длина груза
+    private int loadCapacity; // Грузоподъемность
 
     Freighter(String vehicleName){
        super.setVehicleName(vehicleName);
@@ -48,8 +48,10 @@ public class Freighter extends Aircraft implements FreightTransport {
     }
 
     // methods
+
+    // Расчет стоимости перевозки
     @Override
-    public double calculationOfFuelFromLoad(double distance, double cargoWeight) {
+    public double freightEstimation(double distance, double cargoWeight) {
         return 0;
     }
 }

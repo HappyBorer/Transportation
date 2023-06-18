@@ -1,11 +1,11 @@
 package transportation;
 
 public abstract class Transportation {
-    String vehicleName;
+    String vehicleName; // Названиет транспортного средства
 
-    String typeOfGeographicEnvironment;
-    String waysOfCommunication;
-    String energySource;
+    String typeOfGeographicEnvironment; // Тип географической среды
+    String waysOfCommunication; // Способы коммуникации
+    String energySource; // Источник энергии
 
     // Getter and Setter
 
@@ -48,5 +48,5 @@ public abstract class Transportation {
                 vehicleName, typeOfGeographicEnvironment, waysOfCommunication, energySource);
     }
 
-    public abstract void getTheRemainingFuel(double fuelFromStart, double distanceTraveled);
+    public abstract void calculationOfTheAmountOfEnergyForTransportation(double powerConsumption, double distance); // Расчет количества энергии для транспортировки
 }
