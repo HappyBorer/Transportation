@@ -50,9 +50,9 @@ public abstract class Transportation {
   // methods
 
   public void description(){
-    System.out.printf("Model: %s, series: %s, yearOfIssue: %d, manufacturerCountry: %s", model, series,
+    System.out.printf("Model: %s, series: %s, yearOfIssue: %d, manufacturerCountry: %s\n", model, series,
         yearOfIssue, manufacturerCountry);
   }
 
-  public abstract double CalculateTheTimeOfThePath();
+  public abstract double calculateTheTimeOfThePath();
 }

@@ -1,6 +1,6 @@
 package ru.transportation;
 
 public interface FreightTransportation {
-  void Loading(double cargoWeight);
-  void Unloading(double cargoWeight);
+  void loading(double cargoWeight);
+  void unloading(double cargoWeight);
 }
