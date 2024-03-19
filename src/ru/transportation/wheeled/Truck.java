@@ -6,17 +6,22 @@ import ru.transportation.Transportation;
 public class Truck extends Transportation implements FreightTransportation {
 
   @Override
-  public void loading(double cargoWeight) {
+  public void loadingCargo(double cargoWeight) {
 
   }
 
   @Override
-  public void unloading(double cargoWeight) {
+  public void unloadingCargo(double cargoWeight) {
 
   }
 
   @Override
-  public double calculateTheTimeOfThePath() {
-    return 0;
+  public boolean isDownload() {
+    return false;
+  }
+
+  @Override
+  public void moveTo(String address) {
+
   }
 }

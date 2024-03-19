@@ -6,6 +6,7 @@ public abstract class Transportation {
   public int yearOfIssue;
   public String manufacturerCountry;
 
+  public Transportation(){}
   public Transportation(String model, String series, int yearOfIssue, String manufacturerCountry){
     this.model = model;
     this.series = series;
@@ -54,5 +55,5 @@ public abstract class Transportation {
         yearOfIssue, manufacturerCountry);
   }
 
-  public abstract double calculateTheTimeOfThePath();
+  public abstract void moveTo(String address);
 }
