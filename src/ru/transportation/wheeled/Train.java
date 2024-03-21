@@ -59,11 +59,11 @@ public class Train extends Transportation implements PassengerTransportation, Fr
 
   @Override
   public void loadingCargo(double cargoWeight) {
-    counterPlace += cargoWeight;
+    counterCapacity += cargoWeight;
     if(isDownload()){
       System.out.println("Loading successful");
     }else{
-      counterPlace -= cargoWeight;
+      counterCapacity -= cargoWeight;
       System.out.println("Overload");
     }
 
@@ -72,7 +72,7 @@ public class Train extends Transportation implements PassengerTransportation, Fr
   @Override
   public void unloadingCargo(double cargoWeight) {
     if(cargoWeight <= counterCapacity){
-      counterPlace -= cargoWeight;
+      counterCapacity -= cargoWeight;
       System.out.println("Upload successful");
     }else{
       System.out.println("There is no such amount of cargo");
